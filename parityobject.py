@@ -246,24 +246,3 @@ class ParityManager:
 				return {'result':'the-end-of-all-things'}
 
 
-if __name__ == '__main__':
-	
-	@jsclass('wood','pood')
-	class A (ParityObject):
-		def __init__(self):
-			pass
-		def heyo(self):
-			print('heyo')
-		@jsfunc
-		def mayo(self):
-			print('mayo')
-	
-	a = A()
-	#print(dir(a))
-	#print(_jsclasses)
-	#print(_jsclasstags)
-	print(compile_classes(
-		'wood',
-		rootclass='WoodPair',
-		endpoint='/parity/wood'))
-
